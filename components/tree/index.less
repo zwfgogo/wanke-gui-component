@@ -1,0 +1,52 @@
+.wanke-tree-scroll-x {
+  .ant-tree {
+    height: 100%;
+  }
+
+  .ant-tree-list {
+    height: 100%;
+
+    .ant-tree-list-holder {
+        position: relative;
+        height: 100%;
+    }
+
+    .ant-tree-list-holder-inner {
+        right: auto !important;
+        position: relative !important;
+    }
+  }
+
+  .ant-tree-list-holder > div {
+    position: absolute !important;
+    min-width: 100%;
+  }
+
+  .ant-tree-title {
+    white-space: nowrap;
+  }
+}
+.ant-tree {
+  ::-webkit-scrollbar {
+    visibility: hidden;
+  }
+  /*滑块效果*/
+  ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+  }
+  .ant-tree-list-scrollbar {
+    display: none !important;
+  }
+
+  &:hover {
+    ::-webkit-scrollbar {
+      visibility: visible;
+    }
+    ::-webkit-scrollbar-thumb {
+      visibility: visible;
+    }
+    .ant-tree-list-scrollbar {
+      display: block !important;
+    }
+  }
+}

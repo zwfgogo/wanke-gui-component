@@ -1,0 +1,56 @@
+.ant-form-item {
+  margin-bottom: 0px;
+
+  .ant-form-item-explain {
+    display: none;
+  }
+}
+
+.ant-table-content {
+  user-select: none;
+
+  .ant-table-thead{
+    & > tr {
+      & > th{
+        text-align: center !important;
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    &>tr {
+      &>td {
+        height: 32px;
+        line-height: 32px;
+        padding: 8px 16px;
+
+        .edit-icon-box {
+          display: inline-block;
+          position: absolute;
+          right: 5px;
+          top: calc(50% - 16px);
+          .anticon-close{
+            color: #f30;
+          }
+
+          .anticon-check{
+            color: #0a0;
+          }
+        }
+
+        .edit-icon{
+          margin-left: 8px;
+          color: #06f
+        }
+
+        .ant-form-item{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.edit-tooltip{
+  z-index: 1;
+}

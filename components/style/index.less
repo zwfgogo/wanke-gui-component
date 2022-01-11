@@ -1,0 +1,25 @@
+@import './base.less';
+
+.@{wanke-gui}-vh-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.@{wanke-gui}-flex1 {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #F5F5F5;
+}
+/*滑块效果*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,17 @@
+.search-input {
+  .ant-input-prefix {
+    display: flex;
+    align-items: center;
+  }
+  .ant-input-affix-wrapper,
+  .ant-input {
+    background-color: #fafafb;
+  }
+  &.no-radius {
+    :global {
+      .ant-input-affix-wrapper {
+        border-radius: unset;
+      }
+    }
+  }
+}

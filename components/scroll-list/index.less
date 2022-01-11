@@ -1,0 +1,20 @@
+@import '../style/base.less';
+
+@horizontal-scroll-prefix-cls: ~'@{wanke-gui}-horizontal-scroll';
+
+.@{horizontal-scroll-prefix-cls} {
+  &-list {
+    display: flex;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  &-item {
+    float: left;
+  }
+  &-menu {
+    position: absolute;
+    top: 0;
+    right: -30px;
+  }
+}
